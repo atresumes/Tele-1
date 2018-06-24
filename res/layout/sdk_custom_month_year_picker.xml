@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="1.0">
+        <NumberPicker android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/monthNumberPicker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1.0">
+        <NumberPicker android:id="@id/yearNumberPicker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

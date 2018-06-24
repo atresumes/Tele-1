@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="account_type_array">
+        <item>Current Account</item>
+        <item>Saving Account</item>
+    </array>
+    <array name="bank_array">
+        <item>Allahabad Bank</item>
+        <item>Andhra Bank</item>
+        <item>Axis Bank</item>
+        <item>Bank of Bahrain and Kuwait</item>
+        <item>Bank of Baroda - Corporate Banking</item>
+        <item>Bank of Baroda - Retail Banking</item>
+        <item>Bank of India</item>
+        <item>Bank of Maharashtra</item>
+        <item>Canara Bank</item>
+        <item>Central Bank of India</item>
+        <item>City Union Bank</item>
+        <item>Corporation Bank</item>
+        <item>Deutsche Bank</item>
+        <item>Development Credit Bank</item>
+        <item>Dhanlaxmi Bank</item>
+        <item>Federal Bank</item>
+        <item>ICICI Bank</item>
+        <item>IDBI Bank</item>
+        <item>Indian Bank</item>
+        <item>Indian Overseas Bank</item>
+        <item>IndusInd Bank</item>
+        <item>ING Vysya Bank</item>
+        <item>Jammu and Kashmir Bank</item>
+        <item>Karnataka Bank Ltd</item>
+        <item>Karur Vysya Bank</item>
+        <item>Kotak Bank</item>
+        <item>Laxmi Vilas Bank</item>
+        <item>Oriental Bank of Commerce</item>
+        <item>Punjab National Bank - Corporate Banking</item>
+        <item>Punjab National Bank - Retail Banking</item>
+        <item>Punjab &amp; Sind Bank</item>
+        <item>Shamrao Vitthal Co-operative Bank</item>
+        <item>South Indian Bank</item>
+        <item>State Bank of Bikaner &amp; Jaipur</item>
+        <item>State Bank of Hyderabad</item>
+        <item>State Bank of India</item>
+        <item>State Bank of Mysore</item>
+        <item>State Bank of Patiala</item>
+        <item>State Bank of Travancore</item>
+        <item>Syndicate Bank</item>
+        <item>Tamilnad Mercantile Bank Ltd.</item>
+        <item>UCO Bank</item>
+        <item>Union Bank of India</item>
+        <item>United Bank of India</item>
+        <item>Vijaya Bank</item>
+        <item>Yes Bank Ltd</item>
+    </array>
+    <array name="class_array">
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+        <item>College Student</item>
+    </array>
+    <array name="hear_about">
+        <item>Choose..</item>
+        <item>Internet</item>
+        <item>Newspaper</item>
+        <item>Other</item>
+    </array>
+    <array name="holder_relation_array">
+        <item>Spouse</item>
+        <item>Grandfather or Grandmother</item>
+        <item>Nephew or niece</item>
+        <item>Adopted Child</item>
+        <item>Foster Child</item>
+        <item>Ward</item>
+        <item>Stepson or Stepdaughter</item>
+        <item>Child</item>
+        <item>Employee</item>
+        <item>Unknown</item>
+        <item>Handicapped Dependent</item>
+        <item>Sponsored Dependent</item>
+        <item>Dependent of a minor Dependent</item>
+        <item>Significant</item>
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Other Adult</item>
+        <item>Emancipated Minor</item>
+        <item>Life Partner</item>
+        <item>Other RelationShip</item>
+    </array>
+    <array name="insurance_type_array">
+        <item>Accountable Care Consortium</item>
+        <item>Aetna (IN)</item>
+        <item>BCBSTX Blue Advantage</item>
+        <item>Behavioral Health Systems</item>
+        <item>Blue shield of California</item>
+        <item>CareFirst BlueCross BlueShield</item>
+        <item>CareFirst FEP HMO</item>
+        <item>CareFirst FEP PPO</item>
+        <item>CareFirst FEP HMO/POS</item>
+        <item>CareFirst PPO/Indemnity</item>
+        <item>Cigna</item>
+    </array>
+    <array name="language_array">
+        <item>English</item>
+        <item>American Sign Language</item>
+        <item>Arabic</item>
+        <item>Bosnian</item>
+        <item>Cantonese</item>
+        <item>Catalan</item>
+        <item>Chinese</item>
+        <item>Croatian</item>
+        <item>Dutch</item>
+        <item>Farsi</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Mandarin</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Punjabi</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Taiwanese</item>
+        <item>Turkish</item>
+        <item>Yiddish</item>
+    </array>
+    <array name="questions_array">
+        <item>Security Question</item>
+        <item>What was your high school&apos;s mascot?</item>
+        <item>What was your first pet&apos;s name?</item>
+        <item>What is your oldest sibling&apos;s middle name?</item>
+        <item>What is the color of your first car?</item>
+        <item>What is your oldest child&apos;s middle name?</item>
+        <item>What is the name of the street you grew up on?</item>
+        <item>Where did you go on your favourite vacation?</item>
+    </array>
+    <array name="relation_status_array">
+        <item>Single</item>
+        <item>In a relationship</item>
+        <item>Married</item>
+        <item>Domestic partnership</item>
+        <item>Separated</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+        <item>Not Sure</item>
+    </array>
+    <array name="speciality_array">
+        <item>ADHD/ADD</item>
+        <item>Anger Management</item>
+        <item>Anxiety</item>
+        <item>Asperger&apos;s</item>
+        <item>Bipolar</item>
+        <item>Codependency</item>
+        <item>Cognitive Behavioral Therapy</item>
+        <item>Depression</item>
+        <item>Divorce</item>
+        <item>Domestic Violence</item>
+        <item>Eating Disorders</item>
+        <item>Employment</item>
+        <item>Free 15-Minute Consultation</item>
+        <item>Gay/Lesbian/Bisexual/Transgender</item>
+        <item>Grief/Loss</item>
+        <item>Maternal Health/Postpartum</item>
+        <item>Medication Management</item>
+        <item>Men&apos;s Issues</item>
+        <item>obsessive-compulsive</item>
+        <item>panic-attacks</item>
+        <item>parenting</item>
+        <item>ptsd</item>
+        <item>Relationships</item>
+        <item>Sexual Abuse</item>
+        <item>Sexuality</item>
+        <item>Spirituality</item>
+        <item>Stress</item>
+        <item>Substance Abuse</item>
+        <item>Women&apos;s Issues</item>
+    </array>
+    <array name="therapist_types_array">
+        <item>Alcohol/Drug/Addiction Counselor</item>
+        <item>Psychiatric Nurse Practitioner</item>
+        <item>Clinical Social Worker</item>
+        <item>Psychologist</item>
+        <item>Marriage/Family Therapist</item>
+        <item>Psychiatrist</item>
+        <item>Physician Assistant in Psychiatry</item>
+    </array>
+    <array name="trans_arrays">
+        <item>All Transactions</item>
+        <item>Last 24 Hours Transactions</item>
+        <item>Last 7 Days Transactions</item>
+        <item>Last 30 Days Transactions</item>
+    </array>
+</resources>

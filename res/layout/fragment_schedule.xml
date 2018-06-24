@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="60dp">
+        <LinearLayout app:orientation="vertical" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingTop="8dp" app:paddingRight="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+                <LinearLayout app:id="@+id/linear_sf" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView app:id="@+id/img_sf" app:layout_width="UNKNOWN_DATA_0x3701" app:layout_height="UNKNOWN_DATA_0x3701" app:src="@drawable/ic_user_black_24dp" app:contentDescription="@string/app_name" />
+                    <TextView app:textColor="@color/primary_text" app:id="@+id/txt_name_sf" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/activity_horizontal_margin" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/app_name" app:maxLines="2" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/availability" app:textAllCaps="true" />
+            <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="5dp" app:cardCornerRadius="5dp" app:cardElevation="@dimen/cardview_default_elevation">
+                <TextView app:textSize="15sp" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/txt_availability" app:padding="10dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/availability" />
+            </android.support.v7.widget.CardView>
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/your_preferred_date" app:textAllCaps="true" />
+            <com.talktoangel.gts.CalendarCustomView app:id="@+id/custom_calendar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView app:id="@+id/recycler_fs" app:layout_width="match_parent" app:layout_height="wrap_content" />
+            <Spinner app:id="@+id/sp_app_type_sf" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:layout_marginBottom="8dp" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar app:id="@+id/progress_sf" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_above="@+id/btn_send_sf" style="?unknown_attr_ref: 1010077" />
+    <Button app:textColor="@color/white" app:id="@+id/btn_send_sf" app:background="@drawable/btn_10dp_green_selected" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2b01" app:layout_marginLeft="@dimen/activity_vertical_margin" app:layout_marginRight="@dimen/activity_vertical_margin" app:layout_marginBottom="10dp" app:text="@string/request_appointment" app:layout_alignParentBottom="true" app:textAllCaps="false" style="?unknown_attr_ref: 1010041" />
+</RelativeLayout>

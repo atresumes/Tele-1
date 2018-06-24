@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:id="@+id/app_bar" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout app:id="@+id/toolbar_layout" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_scrollFlags="3" app:contentScrim="?attr/colorPrimary">
+            <ImageView app:id="@+id/imageView_pd" app:fitsSystemWindows="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f090020" app:scaleType="centerCrop" app:contentDescription="@string/app_name" app:layout_collapseMode="2" />
+            <android.support.v7.widget.Toolbar app:id="@id/toolbar" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f010045" app:layout_collapseMode="1" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_provider_detail" />
+    <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@color/white" app:padding="5dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <Button app:textSize="17sp" app:textColor="@color/white" app:id="@+id/btn_schedule" app:background="@drawable/btn_10dp_green_selected" app:paddingLeft="10dp" app:paddingRight="10dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x2d01" app:text="@string/schedule" app:drawableLeft="@drawable/ic_schedule_white_24dp" app:layout_weight="1.0" app:textAllCaps="false" app:drawableStart="@drawable/ic_schedule_white_24dp" style="?attr/buttonBarButtonStyle" />
+        <Button app:textSize="17sp" app:textColor="@color/white" app:id="@+id/btn_message" app:background="@drawable/btn_10dp_green_selected" app:paddingLeft="10dp" app:paddingRight="10dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x2d01" app:layout_marginLeft="6dp" app:text="@string/message" app:drawableLeft="@drawable/ic_message_white_24dp" app:layout_weight="1.0" app:textAllCaps="false" app:drawableStart="@drawable/ic_message_white_24dp" style="?attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

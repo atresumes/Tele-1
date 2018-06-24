@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+        <LinearLayout android:orientation="horizontal" android:id="@id/main_layout" android:background="@color/primary_green" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+            <TextView android:textSize="16dp" android:textStyle="bold" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/login_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/login" android:layout_weight="5.0" />
+            <View android:id="@id/titleDivider" android:background="0x106000c" android:layout_width="UNKNOWN_DATA_0x101" android:layout_height="match_parent" />
+            <TextView android:textSize="16dp" android:textStyle="bold" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/sign_up_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/sign_up" android:layout_weight="5.0" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/login_signup_fragment_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

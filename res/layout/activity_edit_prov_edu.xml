@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/degree" />
+    <Spinner android:id="@+id/sp_degree" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" style="?unknown_attr_ref: 10102d6" />
+    <TextView android:textSize="16sp" android:textColor="@color/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/college_university" />
+    <Spinner android:id="@+id/sp_college" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" style="?unknown_attr_ref: 10102d6" />
+    <TextView android:textSize="16sp" android:textColor="@color/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/year" />
+    <EditText android:id="@+id/et_year" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:hint="@string/year" />
+    <Button android:textColor="@color/white" android:id="@+id/btn_save_epa" android:background="@drawable/btn_10dp_green_selected" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/action_save" style="?unknown_attr_ref: 1010041" />
+    <Button android:textColor="@color/red" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_remove_epa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/remove_education" style="?unknown_attr_ref: 101032b" />
+</LinearLayout>

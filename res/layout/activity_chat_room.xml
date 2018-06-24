@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/chat_background" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView app:id="@+id/recycler_view" app:paddingBottom="6dp" app:scrollbars="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginBottom="50dp" />
+    <LinearLayout app:orientation="horizontal" app:background="@color/white" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="3dp" app:weightSum="2.0" app:layout_alignParentBottom="true">
+        <EditText app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@id/message" app:background="@color/white_dim" app:paddingLeft="4dp" app:paddingRight="1dp" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:hint="@string/prompt_type_your_message_here" app:maxLines="4" app:layout_weight="1.6" />
+        <android.support.design.widget.FloatingActionButton app:textSize="16sp" app:textColor="@color/colorPrimary" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/btn_send" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:src="@drawable/ic_send_black_24dp" app:layout_weight="0.4" app:elevation="0dp" app:fabSize="1" app:backgroundTint="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

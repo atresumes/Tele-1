@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.CardView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="0x106000d" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="@dimen/activity_horizontal_margin" app:cardCornerRadius="2dp" app:cardUseCompatPadding="true">
+        <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="@dimen/activity_vertical_margin">
+            <EditText app:typeface="monospace" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/etOtp" app:layout_width="match_parent" app:layout_height="wrap_content" app:hint="@string/prompt_otp" app:maxLines="1" app:lines="1" app:singleLine="true" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+            <ProgressBar app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/mProgressBar" app:visibility="invisible" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <Button app:textColor="@color/white" app:id="@+id/btnReSend" app:background="@drawable/btn_10dp_green_selected" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="10dp" app:text="@string/action_resend" app:layout_weight="1.0" app:textAllCaps="false" style="?unknown_attr_ref: 1010041" />
+                <Button app:textColor="@color/white" app:id="@+id/btnSubmit" app:background="@drawable/btn_10dp_green_selected" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="10dp" app:text="@string/action_submit" app:layout_weight="1.0" app:textAllCaps="false" style="?unknown_attr_ref: 1010041" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

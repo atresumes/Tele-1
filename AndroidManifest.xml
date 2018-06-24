@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.talktoangel.gts" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="com.talktoangel.gts.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.talktoangel.gts.gcm.permission.C2D_MESSAGE" />
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.talktoangel.gts.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.talktoangel.gts.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.talktoangel.gts.controller.Controller" android:debuggable="true" android:windowSoftInputMode="adjustPan|adjustNothing" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher">
+        <activity android:theme="@style/SplashTheme" android:name="com.talktoangel.gts.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_dashboard" android:name="com.talktoangel.gts.MainActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_login" android:name="com.talktoangel.gts.userauth.LoginActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/title_activity_registration" android:name="com.talktoangel.gts.userauth.UserRegistrationActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/title_activity_registration" android:name="com.talktoangel.gts.userauth.Registration2Activity" android:exported="true" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/title_activity_credit_card" android:name="com.talktoangel.gts.userauth.CreditCardInfoActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.talktoangel.gts.userauth.OTPActivity" android:exported="true" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/providers" android:name="com.talktoangel.gts.BrowseProvidersActivity" />
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_provider_detail" android:name="com.talktoangel.gts.ProviderDetailActivity" />
+        <activity android:label="@string/title_activity_filter" android:name="com.talktoangel.gts.FiltersActivity" />
+        <activity android:label="@string/title_activity_providers" android:name="com.talktoangel.gts.FindProviderActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/title_activity_account_details" android:name="com.talktoangel.gts.settings.AccountDetailsActivity" />
+        <activity android:label="@string/title_activity_basic_information" android:name="com.talktoangel.gts.settings.BasicInfoActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/title_activity_credit_card" android:name="com.talktoangel.gts.settings.CardInfoListActivity" />
+        <activity android:label="@string/action_add_credit_card" android:name="com.talktoangel.gts.settings.AddCreditCardActivity" />
+        <activity android:name="com.talktoangel.gts.userauth.ResetPasswordActivity" />
+        <activity android:label="@string/message" android:name="com.talktoangel.gts.NewMessageActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/schedule" android:name="com.talktoangel.gts.schedule.ScheduleActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <receiver android:name="com.talktoangel.gts.utils.IncomingSms">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_share_black_24dp" />
+        <service android:name="com.talktoangel.gts.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.talktoangel.gts.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:label="Confirmation" android:name="com.talktoangel.gts.schedule.ConfirmScheduleActivity" />
+        <activity android:label="@string/edit_appointment" android:name="com.talktoangel.gts.schedule.EditAppointmentActivity" />
+        <activity android:name="com.talktoangel.gts.ChatRoomActivity" />
+        <activity android:name="com.talktoangel.gts.PayUMoneyActivity" />
+        <service android:name="com.talktoangel.gts.sinch.SinchService" />
+        <activity android:name="com.talktoangel.gts.sinch.CallScreenActivity" />
+        <activity android:name="com.talktoangel.gts.sinch.IncomingCallScreenActivity" android:screenOrientation="portrait" android:noHistory="true" />
+        <activity android:name="com.talktoangel.gts.sinch.PlaceCallActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/availability" android:name="com.talktoangel.gts.therapist.AvailabilityActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/patient" android:name="com.talktoangel.gts.therapist.PatientListActivity" />
+        <activity android:label="@string/patient_details" android:name="com.talktoangel.gts.therapist.PatientDetailsActivity" />
+        <activity android:label="@string/basic_information" android:name="com.talktoangel.gts.therapist.TherapistProfileActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/specialties" android:name="com.talktoangel.gts.therapist.SpecialityListActivity" />
+        <activity android:label="@string/education" android:name="com.talktoangel.gts.therapist.EditProvEduActivity" />
+        <activity android:label="@string/calendar" android:name="com.talktoangel.gts.therapist.CalendarActivity" />
+        <activity android:label="@string/appointment_details" android:name="com.talktoangel.gts.therapist.AppointmentDetailActivity" />
+        <activity android:label="@string/sign_up" android:name="com.talktoangel.gts.userauth.TherapistRegistrationActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/language" android:name="com.talktoangel.gts.therapist.LanguageListActivity" />
+        <activity android:label="@string/sign_up" android:name="com.talktoangel.gts.userauth.TherapistRegistration2Activity" android:exported="true" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/therapist_type" android:name="com.talktoangel.gts.therapist.TherapistTypeActivity" />
+        <activity android:label="@string/appointment_type" android:name="com.talktoangel.gts.therapist.AppointmentTypeActivity" />
+        <activity android:label="@string/bank_details" android:name="com.talktoangel.gts.therapist.BankDetailActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.talktoangel.gts.WebViewActivity" />
+        <activity android:label="Tests" android:name="com.talktoangel.gts.test.TestActivity" />
+        <activity android:label="Personality Test" android:name="com.talktoangel.gts.test.PersonalityTestActivity" />
+        <activity android:label="Anxiety Test" android:name="com.talktoangel.gts.test.AnxietyTestActivity" />
+        <activity android:label="Depression Test" android:name="com.talktoangel.gts.test.DepressionTestActivity" />
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_career_test" android:name="com.talktoangel.gts.test.CareerTestActivity" />
+        <activity android:label="Test Login" android:name="com.talktoangel.gts.test.TestLoginActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/sign_up" android:name="com.talktoangel.gts.test.TestSignUpActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.talktoangel.gts.test.TestDetailActivity" />
+        <service android:name="com.sinch.android.rtc.internal.client.gcm.InstanceIDTokenService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.talktoangel.gts" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.talktoangel.gts.firebaseinitprovider" android:initOrder="100" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+        <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <activity android:theme="@style/MyTheme.AppCompat" android:name="com.payUMoney.sdk.SdkWebViewActivityNew" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/MyTheme" android:label="@string/app_name" android:name="com.payUMoney.sdk.SdkLoginSignUpActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_activity_otp_progress_dialog" android:name="com.payUMoney.sdk.dialog.SdkOtpProgressDialog" android:screenOrientation="portrait" />
+        <activity android:name="com.payUMoney.sdk.SdkHomeActivityNew" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/AppTheme.Transparent" android:label="" android:name="com.payUMoney.sdk.walledSdk.WalletSdkLoginSignUpActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.payUMoney.sdk.walledSdk.SdkHistoryActivity" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:name="com.payu.custombrowser.CBActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible" />
+        <service android:name="com.payu.custombrowser.services.SnoozeService" />
+        <activity android:name="com.payu.magicretry.MainActivity" />
+    </application>
+</manifest>

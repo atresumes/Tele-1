@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="30sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="Yoo - Hoo !!" />
+        <TextView android:textSize="14sp" android:id="@id/tv1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginLeft="20dp" />
+        <ProgressBar android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" />
+        <Button android:textSize="20sp" android:textStyle="bold" android:textColor="@color/active_text" android:id="@id/checkout" android:background="@drawable/button_bkg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pay Now" />
+    </LinearLayout>
+</ScrollView>

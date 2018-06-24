@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_ac_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_details" android:textAllCaps="false" style="?unknown_attr_ref: 101032b" />
+    <View android:background="@color/secondary_text" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+    <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_basic_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/basic_information" android:textAllCaps="false" style="?unknown_attr_ref: 101032b" />
+    <View android:background="@color/secondary_text" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+    <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_credit_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/credit_card" android:textAllCaps="false" style="?unknown_attr_ref: 101032b" />
+    <View android:background="@color/secondary_text" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+    <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/btn_settings" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_settings" android:textAllCaps="false" style="?unknown_attr_ref: 101032b" />
+    <View android:background="@color/secondary_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+</LinearLayout>

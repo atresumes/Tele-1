@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="5dp" app:layout_marginEnd="5dp" app:elevation="@dimen/cardview_default_elevation" app:cardCornerRadius="@dimen/cardview_default_radius">
+    <ImageView app:id="@+id/imgDash" app:background="@color/colorAccent" app:layout_width="UNKNOWN_DATA_0x4101" app:layout_height="UNKNOWN_DATA_0x4101" app:src="@drawable/ic_add_white_24dp" app:contentDescription="@string/app_name" />
+</android.support.v7.widget.CardView>

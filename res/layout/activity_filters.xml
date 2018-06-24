@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:padding="@dimen/activity_vertical_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <Button app:id="@+id/btn_zip_code" app:background="@drawable/ic_location_green_24dp" app:layout_width="UNKNOWN_DATA_0x3201" app:layout_height="wrap_content" style="?unknown_attr_ref: 101032b" />
+        <TextView app:textColor="@color/primary_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/therapist_type" app:textAllCaps="true" />
+        <Spinner app:id="@+id/sp_therapist" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" style="?attr/spinnerDropDownItemStyle" />
+        <TextView app:textColor="@color/primary_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/specialties" app:textAllCaps="true" />
+        <Spinner app:id="@+id/sp_speciality" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" style="?attr/spinnerDropDownItemStyle" />
+        <TextView app:textColor="@color/primary_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/appointment_type" app:textAllCaps="true" />
+        <Spinner app:id="@+id/spAppointType" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" style="?unknown_attr_ref: 1010087" />
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar app:id="@+id/rangeSeekbar1" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:min_value="0.0" app:max_value="5000.0" app:bar_highlight_color="@color/colorAccent" app:left_thumb_color="@color/colorAccent" app:right_thumb_color="@color/colorAccent" />
+        <LinearLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/activity_horizontal_margin" app:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView app:id="@+id/txt_start_range" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_weight="1.0" />
+            <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/txt_end_range" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView app:textColor="@color/primary_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/language" app:textAllCaps="true" />
+        <Spinner app:id="@+id/sp_language" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" style="?attr/spinnerDropDownItemStyle" />
+        <TextView app:textColor="@color/primary_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/gender" app:textAllCaps="true" />
+        <RadioGroup app:orientation="horizontal" app:id="@+id/radio_filter" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="5dp">
+            <RadioButton app:id="@+id/radio_male" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/male" />
+            <RadioButton app:id="@+id/radio_female" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/activity_horizontal_margin" app:text="@string/female" />
+        </RadioGroup>
+        <Button app:textColor="@color/white" app:id="@+id/btn_apply" app:background="@drawable/btn_10dp_green_selected" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:layout_marginBottom="5dp" app:text="@string/apply" app:textAllCaps="false" style="?unknown_attr_ref: 1010041" />
+    </LinearLayout>
+</ScrollView>

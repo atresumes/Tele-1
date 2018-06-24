@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:padding="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <EditText app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/etMessage" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x6401" app:maxHeight="120dp" app:hint="@string/write_your_message_here" app:maxLines="4" app:minLines="3" app:maxLength="500" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberPassword|phone|date" />
+        <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/referral" app:textAllCaps="true" />
+        <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:cardCornerRadius="5dp" app:cardElevation="@dimen/cardview_default_elevation">
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp">
+                <TextView app:textSize="15sp" app:paddingLeft="8dp" app:paddingRight="8dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/refer_you_to_breakthrough" />
+                <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="6dp">
+                    <Button app:textColor="@color/primary_text" app:id="@+id/btnYes" app:background="@drawable/btn_10dp_grey_border" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="5dp" app:text="@string/action_yes" app:layout_weight="1.0" style="?unknown_attr_ref: 1010042" />
+                    <Button app:textColor="@color/primary_text" app:id="@+id/btnNo" app:background="@drawable/btn_10dp_grey_border" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="6dp" app:text="@string/action_no" app:layout_weight="1.0" style="?unknown_attr_ref: 1010042" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/notes" app:textAllCaps="true" />
+        <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:cardCornerRadius="5dp" app:cardElevation="@dimen/cardview_default_elevation">
+            <TextView app:textSize="16sp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="6dp" app:text="@string/by_sending_message_i_agree_to_jilie_leblanc_access_to_my_health_record_on_breakthrough_as_described_in_the_breakthrough_privacy_policy" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <Button app:enabled="false" app:id="@+id/btnSend" app:background="@drawable/btn_10dp_grey_border" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="10dp" app:text="@string/action_send_message" app:layout_alignParentBottom="true" app:textAllCaps="false" style="?unknown_attr_ref: 1010041" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/imageView" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nopoint_green" android:scaleType="centerInside" />
+        <TextView android:textSize="15sp" android:textStyle="italic" android:id="@id/please_wait" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_wait" />
+    </LinearLayout>
+</RelativeLayout>

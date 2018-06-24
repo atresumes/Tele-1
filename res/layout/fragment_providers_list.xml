@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView app:id="@+id/recycler_providers" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <ProgressBar app:id="@+id/progress_provider" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" style="?unknown_attr_ref: 1010077" />
+    <android.support.design.widget.FloatingActionButton app:id="@+id/fab_filter" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="@dimen/activity_horizontal_margin" app:src="@drawable/ic_filter_list_white_24dp" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" />
+</RelativeLayout>

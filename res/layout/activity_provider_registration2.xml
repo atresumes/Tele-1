@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingTop="@dimen/activity_vertical_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:cardCornerRadius="5dp" app:cardElevation="@dimen/cardview_default_elevation">
+            <LinearLayout app:orientation="vertical" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:paddingBottom="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:textSize="15sp" app:textStyle="bold" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="11dp" app:text="@string/therapist_type" />
+                <Button app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_therapist_type_apr" app:background="@drawable/btn_10dp_white_selected" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:hint="@string/select" />
+                <TextView app:textSize="15sp" app:textStyle="bold" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:text="@string/license_no" />
+                <EditText app:id="@+id/et_license_apr" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:maxLines="1" app:maxLength="20" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+                <TextView app:textSize="15sp" app:textStyle="bold" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:text="@string/consultation_fee" />
+                <EditText app:id="@+id/et_charge_apr" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxLines="1" app:maxLength="4" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+                <TextView app:textSize="15sp" app:textStyle="bold" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:text="@string/phone_number" />
+                <LinearLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <TextView app:textSize="17sp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/txtCode" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+                    <EditText app:id="@+id/et_mobile_apr" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="6dp" app:hint="@string/prompt_phone_number" app:maxLines="1" app:maxLength="10" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+                </LinearLayout>
+                <TextView app:textSize="15sp" app:textStyle="bold" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="11dp" app:text="@string/appointment_type" />
+                <Button app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btn_apo_type_apr" app:background="@drawable/btn_10dp_white_selected" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:hint="@string/select" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <ProgressBar app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reg_progress1" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" style="?unknown_attr_ref: 101007a" />
+        <Button app:textStyle="bold" app:textColor="@color/white" app:id="@+id/btn_next_apr" app:background="@drawable/btn_10dp_green_selected" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2601" app:layout_marginTop="@dimen/activity_vertical_margin" app:layout_marginBottom="@dimen/activity_vertical_margin" app:text="@string/action_next" app:textAllCaps="false" style="?unknown_attr_ref: 1010041" />
+    </LinearLayout>
+</ScrollView>

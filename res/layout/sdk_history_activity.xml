@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/central_message_text_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="We are not able to fetch transactions currently. Please retry after some time." />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/loadingPanel" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/loading_trans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please wait while we are loading your transactions" />
+    </LinearLayout>
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/no_trans" android:layout_width="match_parent" android:layout_height="match_parent" android:text="No transactions to show" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:scrollbarStyle="outsideInset" android:id="@id/trans_list" android:paddingTop="12dp" android:paddingBottom="12dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/transparent" android:dividerHeight="15dp" android:overScrollMode="never" />
+        <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/load_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+</LinearLayout>

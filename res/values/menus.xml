@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="activity_forgot_password">res/menu/activity_forgot_password.xml</menu>
+    <menu name="activity_main_drawer">res/menu/activity_main_drawer.xml</menu>
+    <menu name="activity_web_view">res/menu/activity_web_view.xml</menu>
+    <menu name="fs">res/menu/fs.xml</menu>
+    <menu name="menu_add">res/menu/menu_add.xml</menu>
+    <menu name="menu_done">res/menu/menu_done.xml</menu>
+    <menu name="menu_filter">res/menu/menu_filter.xml</menu>
+    <menu name="menu_main">res/menu/menu_main.xml</menu>
+    <menu name="menu_provider">res/menu/menu_provider.xml</menu>
+    <menu name="menu_skip">res/menu/menu_skip.xml</menu>
+    <menu name="sdk_menu">res/menu/sdk_menu.xml</menu>
+</resources>

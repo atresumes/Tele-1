@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout app:orientation="vertical" app:padding="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ProgressBar app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/progress_af" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" style="?unknown_attr_ref: 1010077" />
+        <TextView app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/about_me" app:textAllCaps="true" />
+        <android.support.v7.widget.CardView app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:elevation="@dimen/cardview_default_elevation" app:cardCornerRadius="4dp">
+            <LinearLayout app:orientation="vertical" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:textColor="@color/secondary_text" app:id="@+id/txt_about_me" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/specialties" app:textAllCaps="true" />
+        <android.support.v7.widget.CardView app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:elevation="@dimen/cardview_default_elevation" app:cardCornerRadius="4dp">
+            <LinearLayout app:orientation="vertical" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:textColor="@color/secondary_text" app:id="@+id/txt_specialities" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/rates" app:textAllCaps="true" />
+        <android.support.v7.widget.CardView app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:elevation="@dimen/cardview_default_elevation" app:cardCornerRadius="4dp">
+            <LinearLayout app:orientation="vertical" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:text="@string/self_pay_rate" />
+                <TextView app:textColor="@color/secondary_text" app:id="@+id/txt_rates" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/credentials" app:textAllCaps="true" />
+        <android.support.v7.widget.CardView app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:elevation="@dimen/cardview_default_elevation" app:cardCornerRadius="4dp">
+            <LinearLayout app:orientation="vertical" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:text="@string/licenses" />
+                <TextView app:id="@+id/txt_licenses" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+                <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:text="@string/education" />
+                <TextView app:id="@+id/txt_education" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/address" app:textAllCaps="true" />
+        <android.support.v7.widget.CardView app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:elevation="@dimen/cardview_default_elevation" app:cardCornerRadius="4dp">
+            <LinearLayout app:orientation="vertical" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:id="@+id/txt_city_dash" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+                <TextView app:id="@+id/txt_state_dash" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+                <TextView app:id="@+id/txt_country_dash" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <TextView app:textSize="18sp" app:textStyle="bold" app:textColor="@color/primary_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/whats_your_home_state" />
+        <TextView app:textSize="16sp" app:textStyle="bold" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_horizontal_margin" app:text="@string/get_started_find_therapist" />
+        <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:cardCornerRadius="4dp" app:cardElevation="@dimen/cardview_default_elevation">
+            <LinearLayout app:orientation="vertical" app:padding="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <TextView app:textSize="17sp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/your_state_or_zip_code" app:textAllCaps="true" />
+                <android.support.design.widget.TextInputLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="6dp">
+                    <EditText app:id="@+id/et_city_code" app:layout_width="match_parent" app:layout_height="wrap_content" app:hint="@string/prompt_state_city_or_zip_code" app:maxLength="22" app:drawableLeft="@drawable/ic_location_green_24dp" app:drawablePadding="5dp" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time" app:imeOptions="UNKNOWN_DATA_0x0" app:imeActionLabel="@string/action_ok" app:imeActionId="@+id/code" app:drawableStart="@drawable/ic_location_green_24dp" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/text_please_be_advised" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

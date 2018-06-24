@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:cardCornerRadius="@dimen/cardview_default_radius" app:cardElevation="3dp">
+        <RelativeLayout app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin">
+            <de.hdodenhof.circleimageview.CircleImageView app:id="@+id/img_pic_aad" app:layout_width="UNKNOWN_DATA_0x4101" app:layout_height="UNKNOWN_DATA_0x4101" app:contentDescription="@string/app_name" />
+            <TextView app:textSize="15sp" app:id="@+id/txt_name_aad" app:paddingLeft="6dp" app:paddingRight="6dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:layout_toRightOf="@+id/img_pic_aad" app:layout_toEndOf="@+id/img_pic_aad" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:cardCornerRadius="@dimen/cardview_default_radius" app:cardElevation="3dp">
+        <LinearLayout app:orientation="vertical" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <TextView app:textSize="15sp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/appointment_details" />
+            <TextView app:textSize="15sp" app:id="@+id/txt_date_aad" app:paddingLeft="6dp" app:paddingRight="6dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="10dp" />
+            <TextView app:textSize="15sp" app:id="@+id/txt_time_aad" app:paddingLeft="6dp" app:paddingRight="6dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" />
+            <Button app:id="@+id/btn_call_aad" app:background="@drawable/btn_10dp_white_selected" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:text="@string/call" app:drawableLeft="@drawable/ic_message_green_24dp" app:drawableStart="@drawable/ic_message_green_24dp" style="?attr/borderlessButtonStyle" />
+            <View app:background="@color/divider" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+            <LinearLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+                <Button app:id="@+id/btn_accept_aad" app:background="@drawable/btn_10dp_white_selected" app:layout_width="match_parent" app:layout_height="match_parent" app:text="@string/accept" app:layout_weight="1.0" style="?unknown_attr_ref: 101032f" />
+                <Button app:textColor="@color/red" app:id="@+id/btn_cancel_aad" app:background="@drawable/btn_10dp_white_selected" app:layout_width="match_parent" app:layout_height="match_parent" app:text="@string/cancel" app:layout_weight="1.0" style="?unknown_attr_ref: 101032f" />
+            </LinearLayout>
+            <View app:background="@color/divider" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginBottom="1dp" />
+            <Button app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reschedule_aad" app:background="@drawable/btn_10dp_white_selected" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="5dp" app:text="@string/reschedule_appointment" style="?attr/borderlessButtonStyle" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

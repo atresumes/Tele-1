@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <anim name="abc_fade_in">res/anim/abc_fade_in.xml</anim>
+    <anim name="abc_fade_out">res/anim/abc_fade_out.xml</anim>
+    <anim name="abc_grow_fade_in_from_bottom">res/anim/abc_grow_fade_in_from_bottom.xml</anim>
+    <anim name="abc_popup_enter">res/anim/abc_popup_enter.xml</anim>
+    <anim name="abc_popup_exit">res/anim/abc_popup_exit.xml</anim>
+    <anim name="abc_shrink_fade_out_from_bottom">res/anim/abc_shrink_fade_out_from_bottom.xml</anim>
+    <anim name="abc_slide_in_bottom">res/anim/abc_slide_in_bottom.xml</anim>
+    <anim name="abc_slide_in_top">res/anim/abc_slide_in_top.xml</anim>
+    <anim name="abc_slide_out_bottom">res/anim/abc_slide_out_bottom.xml</anim>
+    <anim name="abc_slide_out_top">res/anim/abc_slide_out_top.xml</anim>
+    <anim name="cb_anim">res/anim/cb_anim.xml</anim>
+    <anim name="cb_animation">res/anim/cb_animation.xml</anim>
+    <anim name="cb_face_out">res/anim/cb_face_out.xml</anim>
+    <anim name="cb_fade_in">res/anim/cb_fade_in.xml</anim>
+    <anim name="cb_tranlateup">res/anim/cb_tranlateup.xml</anim>
+    <anim name="cb_translate">res/anim/cb_translate.xml</anim>
+    <anim name="design_bottom_sheet_slide_in">res/anim/design_bottom_sheet_slide_in.xml</anim>
+    <anim name="design_bottom_sheet_slide_in">res/anim-v21/design_bottom_sheet_slide_in.xml</anim>
+    <anim name="design_bottom_sheet_slide_out">res/anim/design_bottom_sheet_slide_out.xml</anim>
+    <anim name="design_bottom_sheet_slide_out">res/anim-v21/design_bottom_sheet_slide_out.xml</anim>
+    <anim name="design_fab_in">res/anim/design_fab_in.xml</anim>
+    <anim name="design_fab_out">res/anim/design_fab_out.xml</anim>
+    <anim name="design_snackbar_in">res/anim/design_snackbar_in.xml</anim>
+    <anim name="design_snackbar_out">res/anim/design_snackbar_out.xml</anim>
+    <anim name="enter">res/anim/enter.xml</anim>
+    <anim name="exit">res/anim/exit.xml</anim>
+    <anim name="pop_enter">res/anim/pop_enter.xml</anim>
+    <anim name="pop_exit">res/anim/pop_exit.xml</anim>
+    <anim name="slide_down">res/anim/slide_down.xml</anim>
+    <anim name="slide_in_down">res/anim/slide_in_down.xml</anim>
+    <anim name="slide_out_down">res/anim/slide_out_down.xml</anim>
+    <anim name="slide_out_up">res/anim/slide_out_up.xml</anim>
+    <anim name="slide_right">res/anim/slide_right.xml</anim>
+    <anim name="slide_up">res/anim/slide_up.xml</anim>
+</resources>

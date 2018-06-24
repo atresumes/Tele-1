@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/cb_relative_layout">
+    <WebView android:id="@id/webview" android:background="0x106000d" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/magic_retry_container" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/cb_progressbar" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x401" android:max="100" android:progress="50" android:progressDrawable="@drawable/cb_progress_bar" android:layout_alignParentTop="true" style="@*style/Widget.ProgressBar.Horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/trans_overlay" android:background="@drawable/background_drawable" style="@style/cb_linear_layout" />
+    <View android:id="@id/cb_blank_overlay" android:background="0x106000b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/cb_linear_layout">
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/arrow" android:contentDescription="@string/cb_top_arrow" style="@style/cb_image_view" />
+        <FrameLayout android:id="@id/help_view" android:background="0x106000d" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/view" android:visibility="gone" android:layout_height="wrap_content" style="@style/cb_relative_layout">
+            <View android:layout_alignParentTop="true" style="@style/cb_horizontal_line" />
+            <LinearLayout android:layout_height="UNKNOWN_DATA_0x1e01" style="@style/cb_linear_layout">
+                <TextView android:textSize="@dimen/cb_sixteenScaled" android:textColor="@color/cb_textColor" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_marginTop="@dimen/cb_eight" android:layout_marginBottom="@dimen/cb_eight" android:drawableTop="@drawable/slider" style="@style/cb_text_view" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

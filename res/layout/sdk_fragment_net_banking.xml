@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="40dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Spinner android:id="@id/netBankingSpinner" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" />
+    <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp" android:text="@string/netbankingNote" />
+    <Button android:enabled="false" android:textStyle="bold" android:textColor="@color/active_text" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/nbPayButton" android:background="@drawable/button_bkg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/pay_now" />
+</LinearLayout>

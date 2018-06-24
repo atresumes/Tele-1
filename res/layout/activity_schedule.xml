@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="49dp">
+        <LinearLayout app:orientation="vertical" app:padding="@dimen/activity_horizontal_margin" app:layout_width="match_parent" app:layout_height="wrap_content"
+            <LinearLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView app:id="@+id/img_schedule" app:layout_width="UNKNOWN_DATA_0x3701" app:layout_height="UNKNOWN_DATA_0x3701" app:src="@drawable/ic_user_black_24dp" app:contentDescription="@string/app_name" />
+                <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:id="@+id/txtName_s" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/activity_horizontal_margin" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/app_name" app:maxLines="2" />
+            </LinearLayout>
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:text="@string/availability" app:textAllCaps="true" />
+            <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="5dp" app:cardCornerRadius="5dp" app:cardElevation="@dimen/cardview_default_elevation">
+                <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:id="@+id/txtAvailability" app:padding="10dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/availability" app:maxLines="2" />
+            </android.support.v7.widget.CardView>
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="14dp" app:text="@string/your_preferred_date" app:textAllCaps="true" />
+            <com.talktoangel.gts.CalendarCustomView app:id="@+id/custom_calendar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView app:id="@+id/recycler_aschedule" app:layout_width="match_parent" app:layout_height="wrap_content" />
+            <Spinner app:id="@+id/sp_app_type" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginTop="14dp" />
+            <TextView app:textSize="15sp" app:textColor="@color/primary_text" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="14dp" app:text="@string/notes" app:textAllCaps="true" />
+            <android.support.v7.widget.CardView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:cardCornerRadius="5dp" app:cardElevation="@dimen/cardview_default_elevation">
+                <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <TextView app:textSize="15sp" app:id="@+id/txt_notes" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="5dp" app:layout_marginRight="8dp" app:text="@string/by_requesting_this_appointment" />
+                    <TextView app:textColor="@color/red" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="5dp" app:layout_marginRight="8dp" app:layout_marginBottom="5dp" app:text="@string/depending_on_your_provider_policy" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar app:id="@+id/progress_as" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_above="@+id/btnSend" style="?unknown_attr_ref: 1010077" />
+    <Button app:textColor="@color/white" app:id="@+id/btnSend" app:background="@drawable/btn_10dp_green_selected" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2d01" app:layout_marginLeft="@dimen/activity_vertical_margin" app:layout_marginRight="@dimen/activity_vertical_margin" app:layout_marginBottom="10dp" app:text="@string/request_appointment" app:layout_alignParentBottom="true" app:textAllCaps="false" style="?unknown_attr_ref: 1010041" />
+</RelativeLayout>

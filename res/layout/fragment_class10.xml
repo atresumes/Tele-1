@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <ProgressBar app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/progressClass" app:visibility="invisible" app:layout_width="wrap_content" app:layout_height="wrap_content" style="?unknown_attr_ref: 1010077" />
+    <android.support.v7.widget.CardView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:elevation="@dimen/cardview_default_elevation" app:cardCornerRadius="16dp">
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <TextView app:textSize="21sp" app:textColor="@color/white" app:id="@+id/tv_title" app:background="@color/blue" app:paddingLeft="22dp" app:paddingTop="6dp" app:paddingRight="22dp" app:paddingBottom="6dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/activity_vertical_margin" app:text="For Class 10th to 12th" />
+            <TextView app:textSize="14sp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tv_description" app:padding="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:maxWidth="209dp" app:text="@string/app_name" />
+            <Button app:id="@+id/btnReport" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="3dp" app:text="View Sample Report" app:textAllCaps="false" style="?unknown_attr_ref: 101032f" />
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:text="Without counselling" />
+            <RadioGroup app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="6dp">
+                <RadioButton app:id="@+id/radioNoCouns" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="1500" />
+                <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:text="With counselling" />
+                <RadioButton app:id="@+id/radioCouns" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="5dp" app:text="2500" />
+            </RadioGroup>
+            <Button app:id="@+id/btnLogin" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/activity_vertical_margin" app:layout_marginBottom="@dimen/activity_vertical_margin" app:text="@string/login" app:textAllCaps="false" style="?unknown_attr_ref: 101032f" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

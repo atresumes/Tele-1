@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <TextView android:textSize="15sp" android:textColor="@color/primary_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Morning Time" android:layout_weight="1.0" />
+        <TextView android:id="@+id/tv_time_ms" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:id="@+id/tv_time_me" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:weightSum="3.0">
+        <TextView android:textSize="15sp" android:textColor="@color/primary_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Evening Time" android:layout_weight="1.0" />
+        <TextView android:id="@+id/tv_time_es" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:id="@+id/tv_time_ee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:weightSum="3.0">
+        <TextView android:textSize="15sp" android:textColor="@color/primary_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Date" android:layout_weight="1.0" />
+        <TextView android:id="@+id/tv_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" />
+</LinearLayout>

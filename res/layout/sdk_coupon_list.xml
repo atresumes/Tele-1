@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="vertical" android:id="@id/whenHideChooseCouponLayoutRequired" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="0x106000c" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/chooseExistingCoupons" android:background="@color/active_yellow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201" android:text="Choose Coupon" />
+        <ListView android:id="@id/lv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:divider="@color/transparent" />
+        <RelativeLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:background="@drawable/or_circle_bg" android:layout_width="UNKNOWN_DATA_0x2801" android:layout_height="UNKNOWN_DATA_0x2801">
+            <TextView android:textSize="25sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OR" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="20sp" android:textStyle="bold" android:textColor="0x106000c" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/mannualCouponEditText" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3201" android:hint="@string/enter_coupon" android:layout_toLeftOf="@id/verifyCoupon" android:layout_alignParentLeft="true" />
+        <include android:id="@id/verifyCouponProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/sdk_progressdialog_sendingotp" />
+        <Button android:textSize="15sp" android:textColor="@color/white" android:id="@id/verifyCoupon" android:background="@drawable/send_otp" android:layout_width="UNKNOWN_DATA_0x3c01" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginRight="5dp" android:text="Verify" android:layout_alignBottom="@id/mannualCouponEditText" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>
